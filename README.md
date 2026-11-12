@@ -154,7 +154,7 @@ cd FaceRecognition-Docker-v2
 
 The `lib/cpu/` folder is empty on GitHub because the native libraries and model files are too large to host there.
 
-1. Open the [FaceRecognition-Linux-v2 runtime folder on Google Drive](https://drive.google.com/drive/folders/11XBHzGVosF7742_LdToXG4dZ160uYQCu?usp=sharing).
+1. Open the [FaceRecognition-Linux-v2 runtime folder on Google Drive](https://drive.google.com/drive/folders/1Lzz3eb_JMDZ0xyGtnGzxsUmMbgaYzin6?usp=sharing).
 2. Download every file in the folder.
 3. Place the files **directly** in `lib/cpu/`, not in a subfolder.
 
@@ -165,11 +165,12 @@ FaceRecognition-Docker-v2/
 └── lib/
     └── cpu/
         ├── libFaceRecognitionSDK.so
-        ├── libfar-eng.so
+        ├── libfacerec.so
         ├── far.fpk
         ├── libfal-eng.so
         ├── fal.fpk
-        └── ... (libonnxruntime.so and the shared provider library)
+        ├── libonnxruntime.so
+        └── libonnxruntime_providers_shared.so
 ```
 
 > ⚠️ If Google Drive gives you a zip, extract it and move the files up so you don't end up with `lib/cpu/SomeFolder/libFaceRecognitionSDK.so`.
