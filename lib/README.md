@@ -7,8 +7,8 @@ https://drive.google.com/drive/folders/1Lzz3eb_JMDZ0xyGtnGzxsUmMbgaYzin6?usp=sha
 Expected files (CPU):
 
 - `libFaceRecognitionSDK.so`
-- `libfacerec.so`
-- `libonnxruntime.so`, `libonnxruntime_providers_shared.so`
+- `libfar-eng.so`, `libfar-sec.so`
+- `libonnxruntime.so.1`
 - `far.fpk`
 - `libfal-eng.so`, `fal.fpk`
 

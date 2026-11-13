@@ -165,12 +165,12 @@ FaceRecognition-Docker-v2/
 └── lib/
     └── cpu/
         ├── libFaceRecognitionSDK.so
-        ├── libfacerec.so
+        ├── libfar-eng.so
+        ├── libfar-sec.so
         ├── far.fpk
         ├── libfal-eng.so
         ├── fal.fpk
-        ├── libonnxruntime.so
-        └── libonnxruntime_providers_shared.so
+        └── libonnxruntime.so.1
 ```
 
 > ⚠️ If Google Drive gives you a zip, extract it and move the files up so you don't end up with `lib/cpu/SomeFolder/libFaceRecognitionSDK.so`.

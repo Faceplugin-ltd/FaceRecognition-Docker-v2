@@ -5,10 +5,12 @@ cd "$(dirname "$0")"
 LIB_DRIVE="https://drive.google.com/drive/folders/1Lzz3eb_JMDZ0xyGtnGzxsUmMbgaYzin6?usp=sharing"
 
 if [[ ! -f lib/cpu/libFaceRecognitionSDK.so ]] \
-  || [[ ! -f lib/cpu/libfacerec.so ]] \
+  || [[ ! -f lib/cpu/libfar-eng.so ]] \
+  || [[ ! -f lib/cpu/libfar-sec.so ]] \
   || [[ ! -f lib/cpu/far.fpk ]] \
   || [[ ! -f lib/cpu/libfal-eng.so ]] \
-  || [[ ! -f lib/cpu/fal.fpk ]]; then
+  || [[ ! -f lib/cpu/fal.fpk ]] \
+  || [[ ! -f lib/cpu/libonnxruntime.so.1 ]]; then
   echo "ERROR: ./lib/cpu/ is incomplete."
   echo "Download all files from Google Drive into ./lib/cpu/:"
   echo "  $LIB_DRIVE"
